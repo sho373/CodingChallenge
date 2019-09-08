@@ -1,4 +1,4 @@
-export default class Bird{
+export class Bird{
   //自動的に実行されるメソッドで初期化のためのもの
     constructor(gameWidth,gameHeight){
         this.gameWidth= gameWidth;
