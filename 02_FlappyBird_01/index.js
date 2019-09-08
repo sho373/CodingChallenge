@@ -1,5 +1,5 @@
-import Bird from "./bird.js";
-import InputHandler from "./input.js";
+import {Bird} from "./bird.js";
+import {InputHandler} from "./input.js";
 
 let canvas = document.getElementById("gameScreen"); //HTMLファイルと関連付け
 let ctx = canvas.getContext("2d"); //getContextメソッドで描写機能をオンにしています
