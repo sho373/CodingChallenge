@@ -30,7 +30,7 @@ export class Snowflake{
 
         this.speed = Math.sqrt(this.r)*0.4;
         this.angle = getRandomDouble(0,2*Math.PI);
-        this.xoff = Math.sin(this.angle)*0.3;
+        //this.xoff = Math.sin(this.angle)*0.3;
         
     }
     update(deltaTime){
@@ -38,10 +38,10 @@ export class Snowflake{
         //メルティキッスが下へ落ちていく動作
         this.position.y += this.speed;
 
-        this.xoff = Math.sin(this.angle)*0.3;
+        this.xoff = Math.sin(this.angle) + Math.sin(3*this.angle);
         
         //左右に少しずれる
-        this.position.x += this.xoff;
+        this.position.x += (this.xoff * 0.1);
     
         if(this.position.y >= this.gameHeight+this.r){
             this.randomize();
