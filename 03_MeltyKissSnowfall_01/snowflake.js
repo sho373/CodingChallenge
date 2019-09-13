@@ -1,10 +1,10 @@
-export class SnowFlake{
+export class Snowflake{
     constructor(gameWidth,gameHeight){
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
         this.img_normal = document.getElementById("img_meiji");
         this.img_ichigo = document.getElementById("img_ichigo");
-        this.img_macha = document.getElementById("img_macha");
+        this.img_matcha = document.getElementById("img_matcha");
         this.r = 20;
         this.width = this.r  *2;
         this.height = this.r * 2;
