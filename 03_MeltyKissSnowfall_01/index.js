@@ -1,4 +1,4 @@
-import { SnowFlake } from "./snowflake.js";
+import { Snowflake } from "./snowflake.js";
 
 let canvas = document.getElementById("gameScreen");
 let ctx = canvas.getContext("2d");
@@ -11,7 +11,7 @@ let backImg = document.getElementById("img_back");
 let snowflake = [];
 
 for(var i = 0 ; i<80;i++){
-    snowflake.push(new SnowFlake(GAME_WIDTH,GAME_HEIGHT));
+    snowflake.push(new Snowflake(GAME_WIDTH,GAME_HEIGHT));
     
 }
 
