@@ -5,7 +5,7 @@ function getRandomInt(min,max) {
     return Math.floor(min+Math.random() * (max - min + 1));
 }
 
-var melty; //描画するメルティキッスを選択するため
+
 
 export class Snowflake{
     constructor(gameWidth,gameHeight){
@@ -21,6 +21,7 @@ export class Snowflake{
         this.xoff = 0;
         this.dir = (Math.random() > 0.5) ? 1 : -1;
         this.index = getRandomInt(1,3);
+        this.melty = this.pickMelty(this.index);
     }
     randomize(){
         this.position ={
@@ -77,26 +78,26 @@ export class Snowflake{
         this.angle += (this.dir * this.index * 0.003);
    
     }
+    pickMelty(key){
+        switch(key){
+            case 1:
+                return this.img_normal;   
+            case 2:
+                return this.img_ichigo;
+            case 3:
+                return this.img_matcha;
+                
+            default:
+                return this.img_normal;
+        }
+    }
 
     draw(ctx){
         
         ctx.globalAlpha = this.alpha;
         
-        switch(this.index){
-            case 1:
-                melty = this.img_meiji;
-                break;
-            case 2:
-                melty = this.img_macha;
-                break;
-            case 3:
-                melty = this.img_ichigo;
-                break;
-            default:
-                melty = this.img_macha;
-        }
         //ctx.drawImage(this.img_meiji,this.position.x,this.position.y,this.width,this.height);
-       this.drawRotatedImage(ctx,melty,this.position.x+this.r,this.position.y+this.r);
+       this.drawRotatedImage(ctx,this.melty,this.position.x+this.r,this.position.y+this.r);
        
     }
 }
