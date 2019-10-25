@@ -27,7 +27,7 @@ function draw(ctx,y){
     ctx.strokeStyle = "white";
     ctx.beginPath();
     ctx.moveTo(offset,offset+y);
-    ctx.lineTo(GAME_WIDTH-offset, offset+y);
+    ctx.lineTo(canvas_width, offset+y);
     ctx.stroke();
 }
 
