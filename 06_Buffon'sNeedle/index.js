@@ -23,7 +23,7 @@ function getRandomDouble(min,max){
 }
 
 //グリッド（線）を描画
-function draw(ctx,y){
+function draw(y){
     ctx.strokeStyle = "white";
     ctx.beginPath();
     ctx.moveTo(offset,offset+y);
@@ -32,7 +32,7 @@ function draw(ctx,y){
 }
 
 //針の描画
-function drawNeedle(ctx,x1,y1,x2,y2,x,y){
+function drawNeedle(x1,y1,x2,y2,x,y){
     
     ctx.beginPath();
     ctx.arc(x,y,2,0,2*Math.PI);　//針の中心に丸を描画
@@ -48,7 +48,7 @@ function setup(){
 
     for(var i = 0; i <= (GAME_HEIGHT - (2*offset)) / interval; i++){
        
-        draw(ctx,y_); //interval の間隔ごとに線を描画
+        draw(y_); //interval の間隔ごとに線を描画
         
         y_ += interval;
     }
@@ -107,7 +107,7 @@ function gameLoop(){
             ctx.strokeStyle = "green";
         }
         
-        drawNeedle(ctx,x1,y1,x2,y2,x,y);　//線の描画
+        drawNeedle(x1,y1,x2,y2,x,y);　//線の描画
     }
    
     let pie = (total / cross);
