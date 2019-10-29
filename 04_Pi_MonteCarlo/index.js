@@ -45,11 +45,13 @@ function gameLoop(timestamp){
         if(d < r){
             circle++;
             ctx.fillStyle = "red";
-            draw(ctx,x,y);
+           
         }else{
             ctx.fillStyle = "green";
-            draw(ctx,x,y);
+            
         }
+        
+        draw(ctx,x,y);
         
         pi = 4 * (circle / total);　//πを求める
     
