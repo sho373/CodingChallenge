@@ -75,7 +75,7 @@ function gameLoop(){
 
         total++;
        
-        let phi = (Math.PI) * Math.random();　//角度　0<=phi<=π
+        let phi = getRandomDouble(0,Math.PI);　//角度　0<=phi<=π
         
         //針の両端の座標
         x1 = x - r * Math.cos(phi);
