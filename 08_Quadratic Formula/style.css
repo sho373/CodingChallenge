@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: rgb(255, 255, 255);
+    text-align: center;  
+}
+
+body {
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body > p {
+    padding: 20px;
+}
+
+input{
+    width: 10%;
+}
+
+
+.button{
+    padding: 20px;
+}
+
+.answerValues{
+    padding: 10px;
+}
