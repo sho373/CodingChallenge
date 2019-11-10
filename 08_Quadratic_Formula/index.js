@@ -1,4 +1,4 @@
-let canvas = document.getElementById("gameScreen");
+
 let button = document.getElementById("btn");
 
 let root1,root2; //二つの解
