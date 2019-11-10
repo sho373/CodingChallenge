@@ -34,7 +34,7 @@ setup();
 
 function gameLoop(timestamp){
 
-    for(var i = 0; i < 10000; i++){
+    for(var i = 0; i < 10; i++){
         let x = getRandomDouble(0,GAME_WIDTH);
         let y = getRandomDouble(0,GAME_HEIGHT);
         total++;
