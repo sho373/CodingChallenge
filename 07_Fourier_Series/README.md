@@ -9,4 +9,3 @@ I added sliders for speed and N, and the bottons to see sawtooth wave and triang
 
 ![](example.gif)
 
-You can try at [here.](https://sho373.github.io/CodingChallenge/07_Fourier_Series/)
