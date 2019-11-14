@@ -6,6 +6,7 @@ My variation of Fourier Series from The Coding Train: ["Coding Challenge #125: F
 
 I added sliders for speed and N, and the bottons to see sawtooth wave and triangle wave.
 
+You can try at [here](https://sho373.github.io/CodingChallenge/07_Fourier_Series/)
 
 ![](example.gif)
 
