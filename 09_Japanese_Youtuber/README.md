@@ -1,6 +1,6 @@
 # Japanese Youtuber Sound Effects 
 
-I attempt to make a tool to play with sounds effects in JavaScript, HTML and CSS.
+I tried to make a tool to play with sounds effects in JavaScript, HTML and CSS.
 
 You can choose bgm or sounds effect by clicking two buttons bellow with mark of musicical notes.
 
