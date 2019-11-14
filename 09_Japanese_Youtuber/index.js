@@ -4,7 +4,7 @@ let ctx = canvas.getContext("2d");
 var width = canvas.width;
 var height = canvas.height;
 
-let dev = [];
+let div = [];
 
 let koukaon =  []; //10個の効果音配列
 let bgm = [];　　　//10個のbgm配列
@@ -21,13 +21,13 @@ ctx.font = 'bold 40pt sans-serif';
 ctx.fillText('効果音',100,100,100); 
 
 
-let koukaon_dev = document.getElementById("koukaon");
-let bgm_dev = document.getElementById("bgm");
+let koukaon_div = document.getElementById("koukaon");
+let bgm_div = document.getElementById("bgm");
 
 
 for(var i = 0; i < bottunNum;i++){
 
-     dev[i] = document.getElementById(i);  //ボタン（画像）
+     div[i] = document.getElementById(i);  //ボタン（画像）
 
      koukaon.push(new Audio("./sounds/" + i + ".mp3"));　//効果音読み込み
      bgm.push(new Audio("./bgm/" + i + ".mp3"));　　　//bgm読み込み
@@ -37,7 +37,7 @@ for(var i = 0; i < bottunNum;i++){
 
 
 
-koukaon_dev.addEventListener('click',function(){　　//効果音ボタンが押されたとき
+koukaon_div.addEventListener('click',function(){　　//効果音ボタンが押されたとき
 
     bgm_flag = 0; 
 
@@ -46,7 +46,7 @@ koukaon_dev.addEventListener('click',function(){　　//効果音ボタンが押
     
 })
 
-bgm_dev.addEventListener('click',function(){　//bgmボタンが押されたとき
+bgm_div.addEventListener('click',function(){　//bgmボタンが押されたとき
 
     bgm_flag = 1; 
 
@@ -93,70 +93,70 @@ function stop_music(stop,i){
 
 }
 
-dev[0].addEventListener('click',function(){
+div[0].addEventListener('click',function(){
 
    chose_music(bgm_flag,0);
    stop_music(stop,0);
 
 });
 
-dev[1].addEventListener('click',function(){
+div[1].addEventListener('click',function(){
 
     chose_music(bgm_flag,1);
     stop_music(stop,1);
 
 });
 
-dev[2].addEventListener('click',function(){
+div[2].addEventListener('click',function(){
 
     chose_music(bgm_flag,2);
     stop_music(stop,2);
 
 });
 
-dev[3].addEventListener('click',function(){
+div[3].addEventListener('click',function(){
     
     chose_music(bgm_flag,3);
     stop_music(stop,3);
 
 });
 
-dev[4].addEventListener('click',function(){
+div[4].addEventListener('click',function(){
    
     chose_music(bgm_flag,4);
     stop_music(stop,4);
 
 });
 
-dev[5].addEventListener('click',function(){
+div[5].addEventListener('click',function(){
     
     chose_music(bgm_flag,5);
     stop_music(stop,5);
 
 });
 
-dev[6].addEventListener('click',function(){
+div[6].addEventListener('click',function(){
     
     chose_music(bgm_flag,6);
     stop_music(stop,6);
 
 });
 
-dev[7].addEventListener('click',function(){
+div[7].addEventListener('click',function(){
     
     chose_music(bgm_flag,7);
     stop_music(stop,7);
     
 });
 
-dev[8].addEventListener('click',function(){
+div[8].addEventListener('click',function(){
     
     chose_music(bgm_flag,8);
     stop_music(stop,8);
 
 });
 
-dev[9].addEventListener('click',function(){
+div[9].addEventListener('click',function(){
     
     chose_music(bgm_flag,9);
     stop_music(stop,9);
