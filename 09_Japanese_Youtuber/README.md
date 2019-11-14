@@ -4,7 +4,9 @@ I attempt to make a tool to play with sounds effects in JavaScript, HTML and CSS
 
 You can choose bgm or sounds effect by clicking two buttons bellow with mark of musicical notes.
 
+In order to play with this, you need to make 2 directories for bgm and sounds effect. 
 
+I prepared "bgm" and "sounds" directories including 10 mp3 files: "0~9.mp3" in each folders. 
 
 
 ![](example.png)
