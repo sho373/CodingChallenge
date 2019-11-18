@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: rgb(255, 255, 255);
+    text-align: center;  
+}
+
+body {
+    
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    
+}
+
+#gameScreen{
+    border: 1px solid black;
+}
+
