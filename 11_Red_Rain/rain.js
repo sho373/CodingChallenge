@@ -8,7 +8,7 @@ export class Rain{
 
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
-        this.length = getRandomDouble(50,110);
+        this.len = getRandomDouble(50,110);
         this.position ={
             x:getRandomDouble(0,gameWidth),
             y:getRandomDouble(-400,-200)
@@ -16,7 +16,7 @@ export class Rain{
         this.speed = getRandomDouble(2,7);
         this.width = 2;
         this.color = "#c9171e";
-        this.alpha=this.changeScale(this.length,50,110,0.1,0.5);
+        this.alpha=this.changeScale(this.len,50,110,0.1,0.5);
 
     }
 
@@ -27,7 +27,7 @@ export class Rain{
     draw(ctx){
         ctx.globalAlpha = this.alpha;
         ctx.fillStyle = this.color;
-        ctx.fillRect(this.position.x,this.position.y,this.width,this.length);
+        ctx.fillRect(this.position.x,this.position.y,this.width,this.len);
     }
 
     update(){
@@ -37,7 +37,7 @@ export class Rain{
         this.speed = this.speed + 0.08;
 
         if(this.position.y > this.gameHeight){
-            this.position.y = - this.length;
+            this.position.y = - this.len;
             this.speed = getRandomDouble(2,7);
             this.position.x = getRandomDouble(0,this.gameWidth);            
         }
