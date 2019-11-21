@@ -16,7 +16,7 @@ export class Rain{
         this.speed = getRandomDouble(2,7);
         this.width = 2;
         this.color = "#c9171e";
-        this.alpha=this.changeScale(this.len,50,110,0.1,0.5);
+        this.alpha=this.changeScale(this.len,50,110,0.1,0.5);　// lenの長さによって透明度を決める。長いものほどくっきり、短いものをはぼやけて映る
 
     }
 
