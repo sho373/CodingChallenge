@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numeron</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Numer0n
+        </h1>
+    </header>
+    <p>コンピューターの数字を予想して4桁の数字を入力してください
+    </p>
+
+    <div class = "input">
+        <input type="number" id = "guess">
+    </div>
+    
+    <div class = "button">
+        <input type="button" value="入力" id="btn">
+    </div>
+
+    <div id="tryMessage" style="display: none">
+        <p> <span id="tryValue"></span> 回目のトライ</p>
+    </div>
+
+    <div id = "hintMessage" style="display: none">
+
+        <div class ="hintValues">
+             <p> <span id="eatValue"></span> Eat</p>
+             <p> <span id="biteValue"></span> Bite</p>
+        </div>
+       
+    </div>
+
+    <canvas id="textScreen" width="400" height="40"></canvas>
+    <canvas id="gameScreen" width="400" height="140"></canvas>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
