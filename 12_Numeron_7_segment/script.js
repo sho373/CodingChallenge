@@ -9,10 +9,7 @@ let textCtx = textCanvas.getContext("2d");
 let button = document.getElementById("btn");
 let buttonGiveUp = document.getElementById("btn_giveUp");
 
-const SEG_GAME_WIDTH = 400;
-const SEG_GAME_HEIGHT = 140;
-const TEXT_GAME_WIDTH = 400;
-const TEXT_GAME_HEIGHT = 40;
+
 
 const digit = 4;
 const answerArr = [];
@@ -148,7 +145,7 @@ button.addEventListener('click',function(){
     
     //4 EATの場合
     if(eat == digit){
-        textCtx.clearRect(0,0,TEXT_GAME_WIDTH,TEXT_GAME_HEIGHT);
+        
         textCtx.fillStyle = "black";
         textCtx.font = "bold 30px serif";
 
@@ -161,14 +158,16 @@ button.addEventListener('click',function(){
 
 buttonGiveUp.addEventListener('click',function(){
     //resetEatBite();
-    textCtx.clearRect(0,0,TEXT_GAME_WIDTH,TEXT_GAME_HEIGHT);
+   
     textCtx.fillStyle = "black";
     textCtx.font = "bold 30px serif";
 
     textCtx.fillText("残念！正解は",100,30);
 
-    textCanvas.style.visibility = "visible"
-    canvas.style.visibility = "visible"
+    textCanvas.style.visibility = "visible";
+    canvas.style.visibility = "visible";
+    
+     button.disabled = true;
 })
 
 
