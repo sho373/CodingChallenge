@@ -21,7 +21,9 @@ input{
     width: 10%;
     margin: 10px;
 }
-
+button{
+    display: inline-block;
+}
 #gameScreen{
     background-color: black;
     text-align: center;

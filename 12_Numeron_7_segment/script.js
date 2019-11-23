@@ -7,6 +7,7 @@ let textCanvas = document.getElementById("textScreen");
 let textCtx = textCanvas.getContext("2d");
 
 let button = document.getElementById("btn");
+let buttonGiveUp = document.getElementById("btn_giveUp");
 
 const GAME_WIDTH = 800;
 const GAME_HEIGHT = 500;
@@ -155,6 +156,20 @@ button.addEventListener('click',function(){
         canvas.style.visibility = "visible"
     }
 })
+
+buttonGiveUp.addEventListener('click',function(){
+    //resetEatBite();
+
+    textCtx.fillStyle = "black";
+    textCtx.font = "bold 30px serif";
+
+    textCtx.fillText("残念！正解は",100,30);
+
+    textCanvas.style.visibility = "visible"
+    canvas.style.visibility = "visible"
+})
+
+
 
 // 7セグメントパート
 //数字の透明度alphaを決める
