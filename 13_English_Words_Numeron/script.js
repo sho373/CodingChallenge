@@ -22,7 +22,7 @@ let bite = 0;
 
 let count = 0;
 
-const wordsNum = 420;
+const wordsNum = 497;
 
 function getRandomInt(){
     return Math.floor(Math.random() * (wordsNum));
