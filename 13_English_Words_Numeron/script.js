@@ -1,6 +1,6 @@
 import {wordsArray} from "./words.js"
 
-//7セグメントを表示するキャンバス
+//英単語を表示するキャンバス
 let canvas = document.getElementById("gameScreen");
 let ctx = canvas.getContext("2d");
 
@@ -22,7 +22,7 @@ let bite = 0;
 
 let count = 0;
 
-const wordsNum = 497;
+const wordsNum = wordsArray.length;
 
 function getRandomInt(){
     return Math.floor(Math.random() * (wordsNum));
