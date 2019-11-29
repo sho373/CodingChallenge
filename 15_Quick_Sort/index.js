@@ -166,17 +166,18 @@ numBar_btn.addEventListener('click',function(){
     
     numBar =  Number(document.getElementById("N").value);
 
-    width = GAME_WIDTH / numBar;
-    values = new Array(numBar);
-    
     
     if(numBar < 10 || numBar > 500 ){
+      
       alert("10~500の数を入力して下さい");
+      
       numBar = 100;
-      width = GAME_WIDTH / numBar;
-      values = new Array(numBar);
+      
     }
-    
+  
+    width = GAME_WIDTH / numBar;
+    values = new Array(numBar);
+  
     shuffle();
     draw();
   
