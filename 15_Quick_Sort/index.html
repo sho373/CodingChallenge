@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Sort</title>
+
+    <style>
+    #gameScreen{
+        background-color: black;
+        border: 1px solid black;
+    }
+    </style>
+
+</head>
+<body>
+   
+    <script src="index.js" type="module"></script>
+    <canvas id="gameScreen" width="800" height="500"></canvas>
+    
+    <div class ="inputMes">
+        10~500の間の数を入力して棒の数を決めてください。
+    </div>
+    
+    <div class="inputN">
+        <input type="number" id = "N" value="100" min="10" max="500">
+        <input type="button" id="btnN" value="Enter">
+    </div> 
+
+    <div class = "buttons">
+        <p>
+        <input type="button" value="Shuffle" id="btn_shuffle">
+        <input type="button" value="Start" id="btn_start">
+        </p>
+    </div>
+
+    <div class="slidecontainer">
+        <p>Speed = <span id="demoSpeed"></span></p>
+        <input type="range" min="20" max="1000" value="50" class="slider" id="myRangeSpeed">
+    </div>
+
+</body>
+</html>
