@@ -1,4 +1,4 @@
-# Bogo Sort Visualization
+# Quick Sort Visualization
 
 A tool to visualize Quick sort algorithm in JavaScript, HTML and CSS.
 
