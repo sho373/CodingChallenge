@@ -77,8 +77,8 @@ async function moveDisk(from,to){
     var addIndex = from.length - 1;
     var addValue = from[addIndex];
     
-    from.pop(),
-    to.push(addValue)
+    from.pop();
+    to.push(addValue);
     
 }
 
@@ -119,8 +119,7 @@ async function hanoiTower(n,from,to,remain){
 
     }else{
         
-        ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
-        drawBar();
+        
 
         await hanoiTower(n - 1,from,remain,to);
 
@@ -128,7 +127,7 @@ async function hanoiTower(n,from,to,remain){
         
         count++;
        
-        await hanoiTower(n - 1,remain,to,from)
+        await hanoiTower(n - 1,remain,to,from);
           
     }
 }
@@ -145,7 +144,7 @@ function reset(){
     diskOffset = maxDiskWidth / n;
 
     for(var i = 0; i < n ; i++){
-        towerA.push(i)
+        towerA.push(i);
     }
 
 }
@@ -154,7 +153,7 @@ function reset(){
 drawBar();
 
 for(var i = 0; i < n ; i++){
-    towerA.push(i)
+    towerA.push(i);
 }
 
 
@@ -204,7 +203,7 @@ n_btn.addEventListener('click',function(){
     diskOffset = maxDiskWidth / n;
 
     for(var i = 0; i < n ; i++){
-        towerA.push(i)
+        towerA.push(i);
     }
 
     drawTowerA(towerA);
