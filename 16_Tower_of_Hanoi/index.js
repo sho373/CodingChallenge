@@ -140,9 +140,7 @@ function reset(){
     towerB.length = 0;
     towerC.length = 0;
 
-    n =  Number(document.getElementById("N").value);
-    diskOffset = maxDiskWidth / n;
-
+    
     for(var i = 0; i < n ; i++){
         towerA.push(i);
     }
