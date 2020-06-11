@@ -6,12 +6,12 @@ let btn_start = document.getElementById("btn_start");
 let n_btn = document.getElementById("btnN");
 
 let slider = document.getElementById("myRangeSpeed");
-let output = document.getElementById("demoSpeed"); //値を画面に表示するため
+let output = document.getElementById("demoSpeed"); //値を画面に表示するため to show value
 
 
 let speed = slider.value;
 
-output.innerHTML = slider.value ; // 速さを画面に表示
+output.innerHTML = slider.value ; // 速さを画面に表示 (show speed)
 
 slider.oninput = function() {
   speed = slider.value;
@@ -21,15 +21,15 @@ slider.oninput = function() {
 const GAME_WIDTH = 900;
 const GAME_HEIGHT = 500;
 
-const xOffset = 150; //３本の棒を画面内にバランスよく表示させるため
+const xOffset = 150; //３本の棒を画面内にバランスよく表示させるため 
 const yOffset = 50;
 
 const canvasWidth = GAME_WIDTH - 2 * xOffset;　
 const canvasHeight = GAME_HEIGHT -  yOffset;
 
-let interval = canvasWidth / (3 - 1);　//棒と棒の間隔
+let interval = canvasWidth / (3 - 1);　//棒と棒の間隔 (distance between sticks)
 
-let n = 3;　//板の枚数
+let n = 3;　//板の枚数 (number of disk)
 
 
 ctx.font = "bold 50px serif";
@@ -147,7 +147,7 @@ function reset(){
 
 }
 
-//3本のバーと初期位置（towerA）に板描画
+//3本のバーと初期位置（towerA）に板描画  (display tower of hanoi at initial position) 
 drawBar();
 
 for(var i = 0; i < n ; i++){
@@ -192,7 +192,7 @@ n_btn.addEventListener('click',function(){
 
     if(n < 3 || n> 10){
       
-      alert("３~１０の数を入力して下さい");
+      alert("３~１０の数を入力して下さい"); //(type num between 3 10)
       
       n = 3;
       
