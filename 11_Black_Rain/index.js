@@ -19,7 +19,7 @@ for(var i = 0; i < canvas.width / 20; i++){
 
 function gameLoop(){
 
-    //ctx.drawImage(backImg,0,0,GAME_WIDTH,GAME_HEIGHT); //背景の描写 
+    ctx.drawImage(backImg,0,0,GAME_WIDTH,GAME_HEIGHT); //背景の描写 
 
     for(var i = 0; i < rain.length;i++){
         rain[i].update();
